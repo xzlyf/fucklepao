@@ -88,16 +88,16 @@ public class MainActivity extends Activity {
         });
     }
 
-    /* access modifiers changed from: protected */
-    public void onResume() {
+    @Override
+    protected void onResume() {
         super.onResume();
         if (sensorManager != null) {
             sensorManager.registerListener(sensorEventListener, sensorManager.getDefaultSensor(1), 3);
         }
     }
 
-    /* access modifiers changed from: protected */
-    public void onStop() {
+    @Override
+    protected void onStop() {
         super.onStop();
         if (sensorManager != null) {
             sensorManager.unregisterListener(sensorEventListener);
