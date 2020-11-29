@@ -116,7 +116,7 @@ public class HookSensor implements IXposedHookZygoteInit, IXposedHookLoadPackage
     public void initZygote(StartupParam arg0) throws Throwable {
         this.sharedPreferences = new XSharedPreferences("com.xz.fucklepao", "setting");
         this.sharedPreferences.makeWorldReadable();
-        randomUtil = new RandomUtil();
+        randomUtil = new RandomUtil(30);
     }
 
 }
