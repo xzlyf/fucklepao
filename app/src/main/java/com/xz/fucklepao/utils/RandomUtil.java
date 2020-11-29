@@ -16,7 +16,7 @@ public class RandomUtil {
         mRandom = new Random();
     }
 
-    private float getRandomX() {
+    public float getRandomX() {
         if (bx) {
             bx = false;
             return mRandom.nextInt(30) + mRandom.nextFloat();
@@ -26,7 +26,7 @@ public class RandomUtil {
         }
     }
 
-    private float getRandomY() {
+    public float getRandomY() {
         if (by) {
             by = false;
             return mRandom.nextInt(30) + mRandom.nextFloat();
@@ -36,7 +36,7 @@ public class RandomUtil {
         }
     }
 
-    private float getRandomZ() {
+    public float getRandomZ() {
         if (bz) {
             bz = false;
             return mRandom.nextInt(30) + mRandom.nextFloat();
