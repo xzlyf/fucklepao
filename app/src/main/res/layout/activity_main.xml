@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    >
+    android:paddingRight="10dp">
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -50,14 +49,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="@string/keep_run" />
+            android:text="开启/关闭" />
 
-        <CheckBox
-            android:id="@+id/checkBox_lock"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="锁定步数" />
 
         <CheckBox
             android:id="@+id/checkBox_mode_change"
@@ -66,19 +59,6 @@
             android:layout_gravity="center_horizontal"
             android:text="暴力模式" />
 
-        <CheckBox
-            android:id="@+id/checkBox_move"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="摇一摇震动反馈" />
-
-        <CheckBox
-            android:id="@+id/checkBox_keep_sys"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="排除系统应用" />
 
         <TextView
             android:id="@+id/textView1"
